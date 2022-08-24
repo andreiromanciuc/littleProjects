@@ -16,46 +16,189 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZB-iq-HPD">
-                                <rect key="frame" x="81" y="426" width="253" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Calcul TVA" cornerStyle="capsule">
-                                    <backgroundConfiguration key="background" strokeWidth="5" strokeOutset="3">
-                                        <color key="backgroundColor" systemColor="systemBrownColor"/>
-                                        <color key="strokeColor" systemColor="secondarySystemBackgroundColor"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-hv-fY4">
-                                <rect key="frame" x="81" y="211" width="253" height="63"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Adaugare TVA" cornerStyle="capsule">
-                                    <backgroundConfiguration key="background" strokeWidth="5" strokeOutset="3">
-                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
-                                        <color key="strokeColor" systemColor="systemBackgroundColor"/>
-                                    </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
-                                    <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
-                                    <color key="baseBackgroundColor" systemColor="systemFillColor"/>
-                                </buttonConfiguration>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="140" translatesAutoresizingMaskIntoConstraints="NO" id="X5x-3R-edn">
+                                <rect key="frame" x="117.5" y="334" width="179" height="228"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VZB-iq-HPD">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Calcul TVA" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background" strokeWidth="5" strokeOutset="3">
+                                                <color key="backgroundColor" systemColor="systemBrownColor"/>
+                                                <color key="strokeColor" systemColor="secondarySystemBackgroundColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="Knx-wc-a5g" kind="show" id="u14-rv-3Yn"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EPf-hv-fY4">
+                                        <rect key="frame" x="0.0" y="184" width="179" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="gray" title="Adaugare TVA" cornerStyle="capsule">
+                                            <backgroundConfiguration key="background" strokeWidth="5" strokeOutset="3">
+                                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                                <color key="strokeColor" systemColor="systemBackgroundColor"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <color key="baseForegroundColor" systemColor="secondarySystemBackgroundColor"/>
+                                            <color key="baseBackgroundColor" systemColor="systemFillColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="GE3-IT-FrC" kind="show" id="9Ve-3z-jNK"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="X5x-3R-edn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="PEp-hO-ldB"/>
+                            <constraint firstItem="X5x-3R-edn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gko-Sw-46P"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-220.28985507246378" y="77.678571428571431"/>
         </scene>
+        <!--Second Vat View Controller-->
+        <scene sceneID="F3A-jS-hWa">
+            <objects>
+                <viewController id="GE3-IT-FrC" customClass="SecondVatViewController" customModule="TvaCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qJu-6r-9OZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="o2a-gd-50d">
+                                <rect key="frame" x="20" y="273" width="374" height="296"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the price" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="36d-LV-uLC">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4rT-hy-Flm">
+                                        <rect key="frame" x="0.0" y="84" width="374" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Calculate" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                <color key="strokeColor" systemColor="systemGray6Color"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="calculateButton:" destination="GE3-IT-FrC" eventType="touchUpInside" id="8m9-Vo-vmT"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Df5-Bg-Rl6">
+                                        <rect key="frame" x="0.0" y="178" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lxQ-O4-ffj">
+                                        <rect key="frame" x="0.0" y="262" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eqr-J9-gRT"/>
+                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <constraints>
+                            <constraint firstItem="o2a-gd-50d" firstAttribute="centerY" secondItem="qJu-6r-9OZ" secondAttribute="centerY" id="UgP-Ao-wLv"/>
+                            <constraint firstItem="o2a-gd-50d" firstAttribute="centerX" secondItem="qJu-6r-9OZ" secondAttribute="centerX" id="gQP-bf-Jb0"/>
+                            <constraint firstItem="eqr-J9-gRT" firstAttribute="trailing" secondItem="o2a-gd-50d" secondAttribute="trailing" constant="20" id="ink-6Z-kq2"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uXp-G5-7u6"/>
+                    <connections>
+                        <outlet property="priceText" destination="36d-LV-uLC" id="4Wi-nB-iku"/>
+                        <outlet property="totalPriceField" destination="Df5-Bg-Rl6" id="IPF-Rl-emC"/>
+                        <outlet property="vatField" destination="lxQ-O4-ffj" id="oTW-wc-Do7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uqk-ac-mLL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661" y="532"/>
+        </scene>
+        <!--First Vat View Controller-->
+        <scene sceneID="buh-5c-8TT">
+            <objects>
+                <viewController id="Knx-wc-a5g" customClass="FirstVatViewController" customModule="TvaCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HsH-2W-PfR" customClass="firstVat">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="oOr-fS-X3F">
+                                <rect key="frame" x="20" y="273" width="374" height="296"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Pret produs" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WI2-JY-1Ug">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NEb-37-Z6A">
+                                        <rect key="frame" x="0.0" y="84" width="374" height="44"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Calculeaza" cornerStyle="dynamic">
+                                            <backgroundConfiguration key="background">
+                                                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                                <color key="strokeColor" systemColor="systemGray6Color"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" style="UICTFontTextStyleTitle1"/>
+                                            <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="calculateButton:" destination="Knx-wc-a5g" eventType="touchUpInside" id="5kC-KH-a0Q"/>
+                                        </connections>
+                                    </button>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C9M-AL-BcK">
+                                        <rect key="frame" x="0.0" y="178" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mzb-Zw-8Y0">
+                                        <rect key="frame" x="0.0" y="262" width="374" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gTW-u4-8Ky"/>
+                        <color key="backgroundColor" systemColor="systemMintColor"/>
+                        <constraints>
+                            <constraint firstItem="oOr-fS-X3F" firstAttribute="centerY" secondItem="HsH-2W-PfR" secondAttribute="centerY" id="6Yz-Xe-eJQ"/>
+                            <constraint firstAttribute="trailing" secondItem="oOr-fS-X3F" secondAttribute="trailing" constant="20" id="GQh-Oe-2ff"/>
+                            <constraint firstItem="oOr-fS-X3F" firstAttribute="leading" secondItem="gTW-u4-8Ky" secondAttribute="leading" constant="20" id="cOw-Om-OjU"/>
+                            <constraint firstItem="oOr-fS-X3F" firstAttribute="centerY" secondItem="HsH-2W-PfR" secondAttribute="centerY" id="wNS-5W-VVp"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Vr4-8J-Inz"/>
+                    <connections>
+                        <outlet property="displayField" destination="C9M-AL-BcK" id="itx-1A-Jif"/>
+                        <outlet property="displayVat" destination="Mzb-Zw-8Y0" id="2Gf-xg-Qg2"/>
+                        <outlet property="initialPriceField" destination="WI2-JY-1Ug" id="HbZ-EM-0CY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Glm-em-SSl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="660.86956521739137" y="-169.41964285714286"/>
+        </scene>
     </scenes>
     <resources>
         <systemColor name="secondarySystemBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -69,8 +212,17 @@
         <systemColor name="systemFillColor">
             <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemMintColor">
+            <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
