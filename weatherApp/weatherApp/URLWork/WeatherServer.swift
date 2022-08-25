@@ -50,6 +50,5 @@ struct WeatherServer {
             }
             
         }.resume()
-        
     }
 }

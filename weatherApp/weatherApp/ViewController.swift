@@ -27,9 +27,8 @@ class ViewController: UIViewController {
 
 extension ViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if locations.first != nil {
-            coordinates = locations.first!.coordinate
-        }
+        guard let result = locations.first?.coordinate else {return}
+        coordinates = result
     }
 }
 
