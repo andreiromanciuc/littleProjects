@@ -7,7 +7,6 @@
 
 import Foundation
 
-
 struct Result : Decodable {
     var timezone: String?
     var hourly: Time

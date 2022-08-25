@@ -15,6 +15,8 @@
 		5002A05728B65D96007A0DB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5002A05528B65D96007A0DB9 /* LaunchScreen.storyboard */; };
 		501978CF28B75D5900226BB4 /* WeatherServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501978CE28B75D5900226BB4 /* WeatherServer.swift */; };
 		501978D228B7679700226BB4 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501978D128B7679700226BB4 /* Result.swift */; };
+		501978D428B7937400226BB4 /* FirstTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501978D328B7937400226BB4 /* FirstTableViewCell.swift */; };
+		501978D628B7938500226BB4 /* SecondTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 501978D528B7938500226BB4 /* SecondTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		5002A05828B65D96007A0DB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		501978CE28B75D5900226BB4 /* WeatherServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherServer.swift; sourceTree = "<group>"; };
 		501978D128B7679700226BB4 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		501978D328B7937400226BB4 /* FirstTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewCell.swift; sourceTree = "<group>"; };
+		501978D528B7938500226BB4 /* SecondTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				5002A05328B65D96007A0DB9 /* Assets.xcassets */,
 				5002A05528B65D96007A0DB9 /* LaunchScreen.storyboard */,
 				5002A05828B65D96007A0DB9 /* Info.plist */,
+				501978D328B7937400226BB4 /* FirstTableViewCell.swift */,
+				501978D528B7938500226BB4 /* SecondTableViewCell.swift */,
 			);
 			path = weatherApp;
 			sourceTree = "<group>";
@@ -152,10 +158,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				501978D428B7937400226BB4 /* FirstTableViewCell.swift in Sources */,
 				501978D228B7679700226BB4 /* Result.swift in Sources */,
 				5002A04F28B65D95007A0DB9 /* ViewController.swift in Sources */,
 				501978CF28B75D5900226BB4 /* WeatherServer.swift in Sources */,
 				5002A04B28B65D95007A0DB9 /* AppDelegate.swift in Sources */,
+				501978D628B7938500226BB4 /* SecondTableViewCell.swift in Sources */,
 				5002A04D28B65D95007A0DB9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

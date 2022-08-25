@@ -20,7 +20,7 @@ extension DateFormatter {
 
 struct WeatherServer {
     
-    func getWeather(latitude: Double, longitude: Double) {
+    func getWeather(latitude: Double, longitude: Double, completion: @escaping (Result) -> ()) {
         
         let queryItems = [URLQueryItem(name: "latitude", value: String(latitude)),
                           URLQueryItem(name: "longitude", value: String(longitude)),
@@ -39,7 +39,7 @@ struct WeatherServer {
                     let decoder = JSONDecoder()
                     decoder.dateDecodingStrategy = .formatted(DateFormatter.iso8601Full)
                     let result = try decoder.decode(Result.self, from: newData)
-                    print(result)
+                    completion(result)
                 }
                 catch{
                     print(error)
