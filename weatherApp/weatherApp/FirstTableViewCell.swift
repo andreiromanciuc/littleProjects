@@ -9,6 +9,9 @@ import UIKit
 
 class FirstTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var hourLabel: UILabel!
+    @IBOutlet weak var temperatureLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
