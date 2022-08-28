@@ -47,22 +47,20 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
     
-    func getTemperatureFromResult() -> Int? {
+    func getTemperatureFromResult() {
         var index: Int = 0
         let actualHour = Calendar.current.component(.hour, from: Date())
         
-        guard let answer = result else { return nil }
+        guard let answer = result else { return }
         for date in answer.hourly.time {
             let hour = Calendar.current.component(.hour, from: date)
             if hour == actualHour {
                 let response = answer.hourly.time.firstIndex(of: date) ?? 0
                 index = response + 1
                 tempLbl.text = String(answer.hourly.temperature_2m[index])
-                return index
+                break
             }
         }
-        
-        return nil
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -84,6 +82,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.hourLabel.text = String(day.prefix(10)) + newString
                 
                 cell.temperatureLabel.text = String(data.hourly.temperature_2m[indexPath.row])
+                checkForBackGroundColor(temperature: data.hourly.temperature_2m[indexPath.row])
             }
             
                 return cell
@@ -102,6 +101,25 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
 
             return UITableViewCell()
+    }
+    
+    func checkForBackGroundColor(temperature: Float){
+        switch temperature{
+        case -30...10:
+            self.view.backgroundColor = UIColor.gray
+        
+        case 10...17:
+            self.view.backgroundColor = UIColor.blue
+            
+        case 17...23:
+            self.view.backgroundColor = UIColor.green
+            
+        case 23...50:
+            self.view.backgroundColor = UIColor.yellow
+            
+        default:
+            self.view.backgroundColor = UIColor.black
+        }
     }
 }
 
