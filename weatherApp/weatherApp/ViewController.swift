@@ -82,7 +82,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 cell.hourLabel.text = String(day.prefix(10)) + newString
                 
                 cell.temperatureLabel.text = String(data.hourly.temperature_2m[indexPath.row])
-                checkForBackGroundColor(temperature: data.hourly.temperature_2m[indexPath.row])
+                self.view.backgroundColor = checkForBackGroundColor(temperature: data.hourly.temperature_2m[indexPath.row])
+                cell.backgroundColor = checkForBackGroundColor(temperature: data.hourly.temperature_2m[indexPath.row])
             }
             
                 return cell
@@ -95,6 +96,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                     cell.dayLabel.text = response
                     
                     cell.temperatureLabel.text = String(data.daily.temperature_2m_max[indexPath.row])
+                    cell.backgroundColor = checkForBackGroundColor(temperature: data.hourly.temperature_2m[indexPath.row])
                 }
                 
                 return cell
@@ -103,22 +105,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             return UITableViewCell()
     }
     
-    func checkForBackGroundColor(temperature: Float){
+    func checkForBackGroundColor(temperature: Float) -> UIColor {
         switch temperature{
         case -30...10:
-            self.view.backgroundColor = UIColor.gray
+            return UIColor.gray.withAlphaComponent(0.7)
         
         case 10...17:
-            self.view.backgroundColor = UIColor.blue
+            return UIColor.blue.withAlphaComponent(0.7)
             
         case 17...23:
-            self.view.backgroundColor = UIColor.green
+            return UIColor.green.withAlphaComponent(0.7)
             
         case 23...50:
-            self.view.backgroundColor = UIColor.yellow
+            return UIColor.yellow.withAlphaComponent(0.7)
             
         default:
-            self.view.backgroundColor = UIColor.black
+            return UIColor.black.withAlphaComponent(0.7)
         }
     }
 }
