@@ -10,9 +10,10 @@
 		50E7343F28D76CEF001206BD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7343E28D76CEF001206BD /* AppDelegate.swift */; };
 		50E7344128D76CEF001206BD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7344028D76CEF001206BD /* SceneDelegate.swift */; };
 		50E7344328D76CEF001206BD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50E7344228D76CEF001206BD /* ViewController.swift */; };
-		50E7344628D76CEF001206BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E7344428D76CEF001206BD /* Main.storyboard */; };
 		50E7344828D76CEF001206BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 50E7344728D76CEF001206BD /* Assets.xcassets */; };
-		50E7344B28D76CEF001206BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E7344928D76CEF001206BD /* LaunchScreen.storyboard */; };
+		50E7345328D76D69001206BD /* alarm_sound.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 50E7345228D76D69001206BD /* alarm_sound.mp3 */; };
+		50E7345628D76EF6001206BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E7345428D76EF6001206BD /* Main.storyboard */; };
+		50E7345928D76F17001206BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 50E7345728D76F17001206BD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +21,11 @@
 		50E7343E28D76CEF001206BD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		50E7344028D76CEF001206BD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		50E7344228D76CEF001206BD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		50E7344528D76CEF001206BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		50E7344728D76CEF001206BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		50E7344A28D76CEF001206BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		50E7344C28D76CEF001206BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		50E7345228D76D69001206BD /* alarm_sound.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = alarm_sound.mp3; path = "../../../UDemyCourse/EggTimer-iOS13/EggTimer/alarm_sound.mp3"; sourceTree = "<group>"; };
+		50E7345528D76EF6001206BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../UDemyCourse/EggTimer-iOS13/EggTimer/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		50E7345828D76F17001206BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../UDemyCourse/EggTimer-iOS13/EggTimer/Base.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +61,11 @@
 				50E7343E28D76CEF001206BD /* AppDelegate.swift */,
 				50E7344028D76CEF001206BD /* SceneDelegate.swift */,
 				50E7344228D76CEF001206BD /* ViewController.swift */,
-				50E7344428D76CEF001206BD /* Main.storyboard */,
+				50E7345428D76EF6001206BD /* Main.storyboard */,
 				50E7344728D76CEF001206BD /* Assets.xcassets */,
-				50E7344928D76CEF001206BD /* LaunchScreen.storyboard */,
+				50E7345728D76F17001206BD /* LaunchScreen.storyboard */,
 				50E7344C28D76CEF001206BD /* Info.plist */,
+				50E7345228D76D69001206BD /* alarm_sound.mp3 */,
 			);
 			path = EggTimer;
 			sourceTree = "<group>";
@@ -125,9 +128,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				50E7344B28D76CEF001206BD /* LaunchScreen.storyboard in Resources */,
+				50E7345628D76EF6001206BD /* Main.storyboard in Resources */,
 				50E7344828D76CEF001206BD /* Assets.xcassets in Resources */,
-				50E7344628D76CEF001206BD /* Main.storyboard in Resources */,
+				50E7345928D76F17001206BD /* LaunchScreen.storyboard in Resources */,
+				50E7345328D76D69001206BD /* alarm_sound.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,18 +151,18 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		50E7344428D76CEF001206BD /* Main.storyboard */ = {
+		50E7345428D76EF6001206BD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				50E7344528D76CEF001206BD /* Base */,
+				50E7345528D76EF6001206BD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		50E7344928D76CEF001206BD /* LaunchScreen.storyboard */ = {
+		50E7345728D76F17001206BD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				50E7344A28D76CEF001206BD /* Base */,
+				50E7345828D76F17001206BD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
