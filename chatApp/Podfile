@@ -1,12 +1,11 @@
-platform :ios, '10.0'
+platform :ios, '8.0'
 
 target 'chatApp' do
   use_frameworks!
 
   # Pods for chatApp
 
-pod 'CLTypingLabel'
-pod 'Firebase/Auth'
-pod 'Firebase/Firestore'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
 
 end
