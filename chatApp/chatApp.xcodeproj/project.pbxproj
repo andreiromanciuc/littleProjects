@@ -1,0 +1,491 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5058C4B028E2F5C600AE629C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5058C4AF28E2F5C600AE629C /* GoogleService-Info.plist */; };
+		5079ADD328E180BB0071ECE0 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079ADD228E180BB0071ECE0 /* Constants.swift */; };
+		5079ADD528E18CCB0071ECE0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079ADD428E18CCB0071ECE0 /* Message.swift */; };
+		5079ADD828E1978C0071ECE0 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5079ADD628E1978C0071ECE0 /* MessageCell.swift */; };
+		5079ADD928E1978C0071ECE0 /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5079ADD728E1978C0071ECE0 /* MessageCell.xib */; };
+		509AD6AE28DC5641008484A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509AD6AD28DC5641008484A5 /* AppDelegate.swift */; };
+		509AD6B028DC5641008484A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509AD6AF28DC5641008484A5 /* SceneDelegate.swift */; };
+		509AD6B728DC5642008484A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 509AD6B628DC5642008484A5 /* Assets.xcassets */; };
+		509AD6BA28DC5642008484A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509AD6B828DC5642008484A5 /* LaunchScreen.storyboard */; };
+		509AD6C628DC5779008484A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 509AD6C428DC5778008484A5 /* Main.storyboard */; };
+		509AD6CB28DC5796008484A5 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509AD6C728DC5796008484A5 /* WelcomeViewController.swift */; };
+		509AD6CC28DC5796008484A5 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509AD6C828DC5796008484A5 /* ChatViewController.swift */; };
+		509AD6CD28DC5796008484A5 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509AD6C928DC5796008484A5 /* LoginViewController.swift */; };
+		509AD6CE28DC5796008484A5 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509AD6CA28DC5796008484A5 /* RegisterViewController.swift */; };
+		C2BE939DC9C6B3088A785F29 /* Pods_chatApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1215286F6C1A21DA05CF3491 /* Pods_chatApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1215286F6C1A21DA05CF3491 /* Pods_chatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_chatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5058C4AF28E2F5C600AE629C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5079ADD228E180BB0071ECE0 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5079ADD428E18CCB0071ECE0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		5079ADD628E1978C0071ECE0 /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		5079ADD728E1978C0071ECE0 /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
+		509AD6AA28DC5641008484A5 /* chatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		509AD6AD28DC5641008484A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		509AD6AF28DC5641008484A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		509AD6B628DC5642008484A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		509AD6B928DC5642008484A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		509AD6BB28DC5642008484A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		509AD6C528DC5778008484A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = "../../../../UDemyCourse/Flash-Chat-iOS13/Flash Chat iOS13/Views/Base.lproj/Main.storyboard"; sourceTree = "<group>"; };
+		509AD6C728DC5796008484A5 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WelcomeViewController.swift; path = "../../../../UDemyCourse/Flash-Chat-iOS13/Flash Chat iOS13/Controllers/WelcomeViewController.swift"; sourceTree = "<group>"; };
+		509AD6C828DC5796008484A5 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = "../../../../UDemyCourse/Flash-Chat-iOS13/Flash Chat iOS13/Controllers/ChatViewController.swift"; sourceTree = "<group>"; };
+		509AD6C928DC5796008484A5 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "../../../../UDemyCourse/Flash-Chat-iOS13/Flash Chat iOS13/Controllers/LoginViewController.swift"; sourceTree = "<group>"; };
+		509AD6CA28DC5796008484A5 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RegisterViewController.swift; path = "../../../../UDemyCourse/Flash-Chat-iOS13/Flash Chat iOS13/Controllers/RegisterViewController.swift"; sourceTree = "<group>"; };
+		C80FB28F8D77B2AC990F4D27 /* Pods-chatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatApp.release.xcconfig"; path = "Target Support Files/Pods-chatApp/Pods-chatApp.release.xcconfig"; sourceTree = "<group>"; };
+		F51568FB4489E07D4FDBF974 /* Pods-chatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-chatApp.debug.xcconfig"; path = "Target Support Files/Pods-chatApp/Pods-chatApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		509AD6A728DC5641008484A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C2BE939DC9C6B3088A785F29 /* Pods_chatApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		29495359F5508A7BEFE6B089 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F51568FB4489E07D4FDBF974 /* Pods-chatApp.debug.xcconfig */,
+				C80FB28F8D77B2AC990F4D27 /* Pods-chatApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		3DA2AB092C47313BE62BFAB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1215286F6C1A21DA05CF3491 /* Pods_chatApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		509AD6A128DC5641008484A5 = {
+			isa = PBXGroup;
+			children = (
+				509AD6AC28DC5641008484A5 /* chatApp */,
+				509AD6AB28DC5641008484A5 /* Products */,
+				29495359F5508A7BEFE6B089 /* Pods */,
+				3DA2AB092C47313BE62BFAB4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		509AD6AB28DC5641008484A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				509AD6AA28DC5641008484A5 /* chatApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		509AD6AC28DC5641008484A5 /* chatApp */ = {
+			isa = PBXGroup;
+			children = (
+				509AD6AD28DC5641008484A5 /* AppDelegate.swift */,
+				509AD6AF28DC5641008484A5 /* SceneDelegate.swift */,
+				509AD6C128DC56A4008484A5 /* Models */,
+				509AD6C328DC56C3008484A5 /* Views */,
+				509AD6C228DC56B2008484A5 /* Controller */,
+				509AD6B628DC5642008484A5 /* Assets.xcassets */,
+				509AD6B828DC5642008484A5 /* LaunchScreen.storyboard */,
+				509AD6BB28DC5642008484A5 /* Info.plist */,
+				5079ADD228E180BB0071ECE0 /* Constants.swift */,
+				5058C4AF28E2F5C600AE629C /* GoogleService-Info.plist */,
+			);
+			path = chatApp;
+			sourceTree = "<group>";
+		};
+		509AD6C128DC56A4008484A5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5079ADD428E18CCB0071ECE0 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		509AD6C228DC56B2008484A5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				509AD6C828DC5796008484A5 /* ChatViewController.swift */,
+				509AD6C928DC5796008484A5 /* LoginViewController.swift */,
+				509AD6CA28DC5796008484A5 /* RegisterViewController.swift */,
+				509AD6C728DC5796008484A5 /* WelcomeViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		509AD6C328DC56C3008484A5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				509AD6C428DC5778008484A5 /* Main.storyboard */,
+				5079ADD628E1978C0071ECE0 /* MessageCell.swift */,
+				5079ADD728E1978C0071ECE0 /* MessageCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		509AD6A928DC5641008484A5 /* chatApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 509AD6BE28DC5642008484A5 /* Build configuration list for PBXNativeTarget "chatApp" */;
+			buildPhases = (
+				B1766D51AB9FD9CCF2DD47EF /* [CP] Check Pods Manifest.lock */,
+				509AD6A628DC5641008484A5 /* Sources */,
+				509AD6A728DC5641008484A5 /* Frameworks */,
+				509AD6A828DC5641008484A5 /* Resources */,
+				F437B4A8ECAD8E777C57D734 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = chatApp;
+			productName = chatApp;
+			productReference = 509AD6AA28DC5641008484A5 /* chatApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		509AD6A228DC5641008484A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					509AD6A928DC5641008484A5 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = 509AD6A528DC5641008484A5 /* Build configuration list for PBXProject "chatApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 509AD6A128DC5641008484A5;
+			packageReferences = (
+			);
+			productRefGroup = 509AD6AB28DC5641008484A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				509AD6A928DC5641008484A5 /* chatApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		509AD6A828DC5641008484A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5079ADD928E1978C0071ECE0 /* MessageCell.xib in Resources */,
+				509AD6BA28DC5642008484A5 /* LaunchScreen.storyboard in Resources */,
+				5058C4B028E2F5C600AE629C /* GoogleService-Info.plist in Resources */,
+				509AD6B728DC5642008484A5 /* Assets.xcassets in Resources */,
+				509AD6C628DC5779008484A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B1766D51AB9FD9CCF2DD47EF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-chatApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F437B4A8ECAD8E777C57D734 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chatApp/Pods-chatApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-chatApp/Pods-chatApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-chatApp/Pods-chatApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		509AD6A628DC5641008484A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				509AD6CD28DC5796008484A5 /* LoginViewController.swift in Sources */,
+				509AD6CE28DC5796008484A5 /* RegisterViewController.swift in Sources */,
+				509AD6CB28DC5796008484A5 /* WelcomeViewController.swift in Sources */,
+				509AD6AE28DC5641008484A5 /* AppDelegate.swift in Sources */,
+				5079ADD328E180BB0071ECE0 /* Constants.swift in Sources */,
+				5079ADD528E18CCB0071ECE0 /* Message.swift in Sources */,
+				509AD6CC28DC5796008484A5 /* ChatViewController.swift in Sources */,
+				509AD6B028DC5641008484A5 /* SceneDelegate.swift in Sources */,
+				5079ADD828E1978C0071ECE0 /* MessageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		509AD6B828DC5642008484A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				509AD6B928DC5642008484A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		509AD6C428DC5778008484A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				509AD6C528DC5778008484A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		509AD6BC28DC5642008484A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		509AD6BD28DC5642008484A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		509AD6BF28DC5642008484A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51568FB4489E07D4FDBF974 /* Pods-chatApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45FBUS7RRQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chatApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = andrei.romanciuc.chatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		509AD6C028DC5642008484A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C80FB28F8D77B2AC990F4D27 /* Pods-chatApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 45FBUS7RRQ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = chatApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = andrei.romanciuc.chatApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		509AD6A528DC5641008484A5 /* Build configuration list for PBXProject "chatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509AD6BC28DC5642008484A5 /* Debug */,
+				509AD6BD28DC5642008484A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		509AD6BE28DC5642008484A5 /* Build configuration list for PBXNativeTarget "chatApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				509AD6BF28DC5642008484A5 /* Debug */,
+				509AD6C028DC5642008484A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 509AD6A228DC5641008484A5 /* Project object */;
+}

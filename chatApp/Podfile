@@ -1,0 +1,12 @@
+platform :ios, '8.0'
+
+target 'chatApp' do
+  use_frameworks!
+
+  # Pods for chatApp
+
+  pod 'Firebase/Auth'
+  pod 'Firebase/Firestore'
+  pod 'IQKeyboardManagerSwift'
+
+end
