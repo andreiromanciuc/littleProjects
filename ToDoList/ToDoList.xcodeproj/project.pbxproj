@@ -14,6 +14,7 @@
 		502BBD452908238100778199 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 502BBD442908238100778199 /* Assets.xcassets */; };
 		502BBD482908238100778199 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 502BBD462908238100778199 /* LaunchScreen.storyboard */; };
 		502BBD7929091B7200778199 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 502BBD7729091B7200778199 /* DataModel.xcdatamodeld */; };
+		502BBD7B2909608800778199 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 502BBD7A2909608800778199 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		502BBD472908238100778199 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		502BBD492908238100778199 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		502BBD7829091B7200778199 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		502BBD7A2909608800778199 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,9 +60,9 @@
 		502BBD3A2908238000778199 /* ToDoList */ = {
 			isa = PBXGroup;
 			children = (
-				502BBD532908259000778199 /* Views */,
 				502BBD522908257800778199 /* Controllers */,
 				502BBD512908256C00778199 /* Data Model */,
+				502BBD532908259000778199 /* Views */,
 				502BBD3B2908238000778199 /* AppDelegate.swift */,
 				502BBD3D2908238000778199 /* SceneDelegate.swift */,
 				502BBD442908238100778199 /* Assets.xcassets */,
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				502BBD3F2908238000778199 /* ToDoListViewController.swift */,
+				502BBD7A2909608800778199 /* CategoryViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				502BBD7B2909608800778199 /* CategoryViewController.swift in Sources */,
 				502BBD7929091B7200778199 /* DataModel.xcdatamodeld in Sources */,
 				502BBD402908238000778199 /* ToDoListViewController.swift in Sources */,
 				502BBD3C2908238000778199 /* AppDelegate.swift in Sources */,
