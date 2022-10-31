@@ -17,9 +17,12 @@ class CategoryViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        //loadLists()
     }
 
+    
+    //MARK: - Tableview Datasource Methods
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return categoryArray.count
     }
@@ -32,38 +35,60 @@ class CategoryViewController: UITableViewController {
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        
-    }
+    
+    //MARK: - Data manipulation Methods
+    
+//    func saveList() {
+//
+//        do {
+//            try context.save()
+//        } catch {
+//            print("Error saving context, \(error)")
+//        }
+//
+//        tableView.reloadData()
+//    }
+    
+    
+//    func loadLists(){
+//        let request: NSFetchRequest<Category> = Category.fetchRequest()
+//        do{
+//           categoryArray = try context.fetch(request)
+//        } catch {
+//            print("Error fetching data from context \(error)")
+//        }
+//
+//        tableView.reloadData()
+//    }
 
-    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
-        
-        
-    }
     
-    func saveItems() {
-        
-        do {
-            try context.save()
-        } catch {
-            print("Error saving context, \(error)")
-        }
-        
-        tableView.reloadData()
-    }
+    //MARK: - Add New Categories
     
-    func loadItems(_ request: NSFetchRequest<Category> = Category.fetchRequest()){
-        
-        do{
-           categoryArray = try context.fetch(request)
-        } catch {
-            print("Error fetching data from context \(error)")
-        }
-        
-        tableView.reloadData()
-    }
-    
-    
+//    @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+//
+//        var textField = UITextField()
+//
+//        let alert = UIAlertController(title: "Add New List", message: "", preferredStyle: .alert)
+//        let action = UIAlertAction(title: "Add list", style: .default) { (action) in
+//
+//        let category = Category(context: self.context)
+//
+//            if let text = textField.text {
+//                category.name = text
+//                self.categoryArray.append(category)
+//            }
+//
+//            self.saveList()
+//        }
+//
+//        alert.addTextField {(alertTextField) in
+//            alertTextField.placeholder = "Add new list"
+//            textField = alertTextField
+//        }
+//
+//        alert.addAction(action)
+//
+//        present(alert, animated: true)
+//    }
 }
 
