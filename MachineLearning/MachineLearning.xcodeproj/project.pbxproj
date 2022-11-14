@@ -60,7 +60,6 @@
 		50ABD189292239D400B464FD /* MachineLearning */ = {
 			isa = PBXGroup;
 			children = (
-				50ABD1A129223AA100B464FD /* Inceptionv3.mlmodel */,
 				50ABD18A292239D400B464FD /* AppDelegate.swift */,
 				50ABD18C292239D400B464FD /* SceneDelegate.swift */,
 				50ABD18E292239D400B464FD /* ViewController.swift */,
@@ -69,6 +68,7 @@
 				50ABD198292239D600B464FD /* LaunchScreen.storyboard */,
 				50ABD19B292239D600B464FD /* Info.plist */,
 				50ABD193292239D400B464FD /* MachineLearning.xcdatamodeld */,
+				50ABD1A129223AA100B464FD /* Inceptionv3.mlmodel */,
 			);
 			path = MachineLearning;
 			sourceTree = "<group>";
